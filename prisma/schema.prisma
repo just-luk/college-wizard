@@ -1,0 +1,519 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider     = "mysql"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+model characteristics {
+  UNITID   Int     @id
+  PEO1ISTR String? @db.Text
+  PEO2ISTR String? @db.Text
+  PEO3ISTR String? @db.Text
+  PEO4ISTR String? @db.Text
+  PEO5ISTR String? @db.Text
+  PEO6ISTR String? @db.Text
+  PEO7ISTR String? @db.Text
+  CNTLAFFI String? @db.Text
+  PUBPRIME String? @db.Text
+  PUBSECON String? @db.Text
+  RELAFFIL String? @db.Text
+  LEVEL1   String? @db.Text
+  LEVEL1A  String? @db.Text
+  LEVEL1B  String? @db.Text
+  LEVEL2   String? @db.Text
+  LEVEL3   String? @db.Text
+  LEVEL4   String? @db.Text
+  LEVEL5   String? @db.Text
+  LEVEL6   String? @db.Text
+  LEVEL7   String? @db.Text
+  LEVEL8   String? @db.Text
+  LEVEL12  String? @db.Text
+  LEVEL17  String? @db.Text
+  LEVEL18  String? @db.Text
+  LEVEL19  String? @db.Text
+  CALSYS   String? @db.Text
+  FT_UG    String? @db.Text
+  FT_FTUG  String? @db.Text
+  FTGDNIDP String? @db.Text
+  PT_UG    String? @db.Text
+  PT_FTUG  String? @db.Text
+  PTGDNIDP String? @db.Text
+  DOCPP    String? @db.Text
+  DOCPPSP  String? @db.Text
+  OPENADMP String? @db.Text
+  NONCRDT1 String? @db.Text
+  NONCRDT2 String? @db.Text
+  NONCRDT3 String? @db.Text
+  NONCRDT4 String? @db.Text
+  NONCRDT5 String? @db.Text
+  NONCRDT6 String? @db.Text
+  NONCRDT7 String? @db.Text
+  NONCRDT8 String? @db.Text
+  NONCRDT9 String? @db.Text
+  VET1     String? @db.Text
+  VET2     String? @db.Text
+  VET3     String? @db.Text
+  VET4     String? @db.Text
+  VET5     String? @db.Text
+  VET9     String? @db.Text
+  CREDITS1 String? @db.Text
+  CREDITS2 String? @db.Text
+  CREDITS3 String? @db.Text
+  CREDITS4 String? @db.Text
+  SLO5     String? @db.Text
+  SLO51    String? @db.Text
+  SLO52    String? @db.Text
+  SLO521   String? @db.Text
+  SLO53    String? @db.Text
+  SLO6     String? @db.Text
+  SLO7     String? @db.Text
+  SLOA     String? @db.Text
+  SLO8     String? @db.Text
+  SLO81    String? @db.Text
+  SLO82    String? @db.Text
+  SLO83    String? @db.Text
+  SLOB     String? @db.Text
+  SLO9     String? @db.Text
+  YRSCOLL  String? @db.Text
+  STUSRV2  String? @db.Text
+  STUSRV3  String? @db.Text
+  STUSRV4  String? @db.Text
+  STUSRV8  String? @db.Text
+  STUSRV9  String? @db.Text
+  LIBRES1  String? @db.Text
+  LIBRES2  String? @db.Text
+  LIBRES3  String? @db.Text
+  LIBRES4  String? @db.Text
+  LIBRES5  String? @db.Text
+  LIBRES6  String? @db.Text
+  LIBRES9  String? @db.Text
+  TUITPL   String? @db.Text
+  TUITPL1  String? @db.Text
+  TUITPL2  String? @db.Text
+  TUITPL3  String? @db.Text
+  TUITPL4  String? @db.Text
+  PRMPGM   String? @db.Text
+  DSTNUGC  String? @db.Text
+  DSTNUGP  String? @db.Text
+  DSTNUGN  String? @db.Text
+  DSTNGC   String? @db.Text
+  DSTNGP   String? @db.Text
+  DSTNGN   String? @db.Text
+  DISTCRS  String? @db.Text
+  DISTPGS  String? @db.Text
+  DSTNCED1 String? @db.Text
+  DSTNCED2 String? @db.Text
+  DSTNCED3 String? @db.Text
+  DISTNCED String? @db.Text
+  DISAB    String? @db.Text
+  XDISABPC String? @db.Text
+  DISABPCT String? @db.Text
+  ALLONCAM String? @db.Text
+  TUITVARY String? @db.Text
+  ROOM     String? @db.Text
+  XROOMCAP String? @db.Text
+  ROOMCAP  String? @db.Text
+  BOARD    String? @db.Text
+  XMEALSWK String? @db.Text
+  MEALSWK  String? @db.Text
+  XROOMAMT String? @db.Text
+  ROOMAMT  String? @db.Text
+  XBORDAMT String? @db.Text
+  BOARDAMT String? @db.Text
+  XRMBDAMT String? @db.Text
+  RMBRDAMT String? @db.Text
+  XAPPFEEU String? @db.Text
+  APPLFEEU String? @db.Text
+  XAPPFEEG String? @db.Text
+  APPLFEEG String? @db.Text
+  ATHASSOC String? @db.Text
+  ASSOC1   String? @db.Text
+  ASSOC2   String? @db.Text
+  ASSOC3   String? @db.Text
+  ASSOC4   String? @db.Text
+  ASSOC5   String? @db.Text
+  ASSOC6   String? @db.Text
+  SPORT1   String? @db.Text
+  CONFNO1  String? @db.Text
+  SPORT2   String? @db.Text
+  CONFNO2  String? @db.Text
+  SPORT3   String? @db.Text
+  CONFNO3  String? @db.Text
+  SPORT4   String? @db.Text
+  CONFNO4  String? @db.Text
+}
+
+model enrollment_general {
+  UNITID   Int    @id
+  XCDACTUA Bytes? @db.Blob
+  CDACTUA  Bytes? @db.Blob
+  XCNACTUA Bytes? @db.Blob
+  CNACTUA  Bytes? @db.Blob
+  XCDACTGA Bytes? @db.Blob
+  CDACTGA  Bytes? @db.Blob
+  XEFTEUG  Bytes? @db.Blob
+  EFTEUG   Bytes? @db.Blob
+  XEFTEGD  Bytes? @db.Blob
+  EFTEGD   Bytes? @db.Blob
+  XFTEUG   Bytes? @db.Blob
+  FTEUG    Bytes? @db.Blob
+  XFTEGD   Bytes? @db.Blob
+  FTEGD    Bytes? @db.Blob
+  XFTEDPP  Bytes? @db.Blob
+  FTEDPP   Bytes? @db.Blob
+  ACTTYPE  Bytes? @db.Blob
+}
+
+model enrollment_specific {
+  UNITID   Int?
+  EFFYALEV Bytes? @db.Blob
+  EFFYLEV  Bytes? @db.Blob
+  LSTUDY   Bytes? @db.Blob
+  XEYTOTLT Bytes? @db.Blob
+  EFYTOTLT Bytes? @db.Blob
+  XEYTOTLM Bytes? @db.Blob
+  EFYTOTLM Bytes? @db.Blob
+  XEYTOTLW Bytes? @db.Blob
+  EFYTOTLW Bytes? @db.Blob
+  XEFYAIAT Bytes? @db.Blob
+  EFYAIANT Bytes? @db.Blob
+  XEFYAIAM Bytes? @db.Blob
+  EFYAIANM Bytes? @db.Blob
+  XEFYAIAW Bytes? @db.Blob
+  EFYAIANW Bytes? @db.Blob
+  XEFYASIT Bytes? @db.Blob
+  EFYASIAT Bytes? @db.Blob
+  XEFYASIM Bytes? @db.Blob
+  EFYASIAM Bytes? @db.Blob
+  XEFYASIW Bytes? @db.Blob
+  EFYASIAW Bytes? @db.Blob
+  XEFYBKAT Bytes? @db.Blob
+  EFYBKAAT Bytes? @db.Blob
+  XEFYBKAM Bytes? @db.Blob
+  EFYBKAAM Bytes? @db.Blob
+  XEFYBKAW Bytes? @db.Blob
+  EFYBKAAW Bytes? @db.Blob
+  XEFYHIST Bytes? @db.Blob
+  EFYHISPT Bytes? @db.Blob
+  XEFYHISM Bytes? @db.Blob
+  EFYHISPM Bytes? @db.Blob
+  XEFYHISW Bytes? @db.Blob
+  EFYHISPW Bytes? @db.Blob
+  XEFYNHPT Bytes? @db.Blob
+  EFYNHPIT Bytes? @db.Blob
+  XEFYNHPM Bytes? @db.Blob
+  EFYNHPIM Bytes? @db.Blob
+  XEFYNHPW Bytes? @db.Blob
+  EFYNHPIW Bytes? @db.Blob
+  XEFYWHIT Bytes? @db.Blob
+  EFYWHITT Bytes? @db.Blob
+  XEFYWHIM Bytes? @db.Blob
+  EFYWHITM Bytes? @db.Blob
+  XEFYWHIW Bytes? @db.Blob
+  EFYWHITW Bytes? @db.Blob
+  XEFY2MOT Bytes? @db.Blob
+  EFY2MORT Bytes? @db.Blob
+  XEFY2MOM Bytes? @db.Blob
+  EFY2MORM Bytes? @db.Blob
+  XEFY2MOW Bytes? @db.Blob
+  EFY2MORW Bytes? @db.Blob
+  XEYUNKNT Bytes? @db.Blob
+  EFYUNKNT Bytes? @db.Blob
+  XEYUNKNM Bytes? @db.Blob
+  EFYUNKNM Bytes? @db.Blob
+  XEYUNKNW Bytes? @db.Blob
+  EFYUNKNW Bytes? @db.Blob
+  XEYNRALT Bytes? @db.Blob
+  EFYNRALT Bytes? @db.Blob
+  XEYNRALM Bytes? @db.Blob
+  EFYNRALM Bytes? @db.Blob
+  XEYNRALW Bytes? @db.Blob
+  EFYNRALW Bytes? @db.Blob
+  XEFYGUUN Bytes? @db.Blob
+  EFYGUUN  Bytes? @db.Blob
+  XEFYGUAN Bytes? @db.Blob
+  EFYGUAN  Bytes? @db.Blob
+  XEFYGUTO Bytes? @db.Blob
+  EFYGUTOT Bytes? @db.Blob
+  XEFYGUKN Bytes? @db.Blob
+  EFYGUKN  Bytes? @db.Blob
+  id       Int    @id @default(autoincrement())
+}
+
+model general {
+  UNITID   Int    @id
+  INSTNM   Bytes? @db.Blob
+  IALIAS   Bytes? @db.Blob
+  ADDR     Bytes? @db.Blob
+  CITY     Bytes? @db.Blob
+  STABBR   Bytes? @db.Blob
+  ZIP      Bytes? @db.Blob
+  FIPS     Bytes? @db.Blob
+  OBEREG   Bytes? @db.Blob
+  CHFNM    Bytes? @db.Blob
+  CHFTITLE Bytes? @db.Blob
+  GENTELE  Bytes? @db.Blob
+  EIN      Bytes? @db.Blob
+  UEIS     Bytes? @db.Blob
+  OPEID    Bytes? @db.Blob
+  OPEFLAG  Bytes? @db.Blob
+  WEBADDR  Bytes? @db.Blob
+  ADMINURL Bytes? @db.Blob
+  FAIDURL  Bytes? @db.Blob
+  APPLURL  Bytes? @db.Blob
+  NPRICURL Bytes? @db.Blob
+  VETURL   Bytes? @db.Blob
+  ATHURL   Bytes? @db.Blob
+  DISAURL  Bytes? @db.Blob
+  SECTOR   Bytes? @db.Blob
+  ICLEVEL  Bytes? @db.Blob
+  CONTROL  Bytes? @db.Blob
+  HLOFFER  Bytes? @db.Blob
+  UGOFFER  Bytes? @db.Blob
+  GROFFER  Bytes? @db.Blob
+  HDEGOFR1 Bytes? @db.Blob
+  DEGGRANT Bytes? @db.Blob
+  HBCU     Bytes? @db.Blob
+  HOSPITAL Bytes? @db.Blob
+  MEDICAL  Bytes? @db.Blob
+  TRIBAL   Bytes? @db.Blob
+  LOCALE   Bytes? @db.Blob
+  OPENPUBL Bytes? @db.Blob
+  ACT      Bytes? @db.Blob
+  NEWID    Bytes? @db.Blob
+  DEATHYR  Bytes? @db.Blob
+  CLOSEDAT Bytes? @db.Blob
+  CYACTIVE Bytes? @db.Blob
+  POSTSEC  Bytes? @db.Blob
+  PSEFLAG  Bytes? @db.Blob
+  PSET4FLG Bytes? @db.Blob
+  RPTMTH   Bytes? @db.Blob
+  INSTCAT  Bytes? @db.Blob
+  C21BASIC Bytes? @db.Blob
+  C21IPUG  Bytes? @db.Blob
+  C21IPGRD Bytes? @db.Blob
+  C21UGPRF Bytes? @db.Blob
+  C21ENPRF Bytes? @db.Blob
+  C21SZSET Bytes? @db.Blob
+  C18BASIC Bytes? @db.Blob
+  C15BASIC Bytes? @db.Blob
+  CCBASIC  Bytes? @db.Blob
+  CARNEGIE Bytes? @db.Blob
+  LANDGRNT Bytes? @db.Blob
+  INSTSIZE Bytes? @db.Blob
+  F1SYSTYP Bytes? @db.Blob
+  F1SYSNAM Bytes? @db.Blob
+  F1SYSCOD Bytes? @db.Blob
+  CBSA     Bytes? @db.Blob
+  CBSATYPE Bytes? @db.Blob
+  CSA      Bytes? @db.Blob
+  COUNTYCD Bytes? @db.Blob
+  COUNTYNM Bytes? @db.Blob
+  CNGDSTCD Bytes? @db.Blob
+  LONGITUD Bytes? @db.Blob
+  LATITUDE Bytes? @db.Blob
+  DFRCGID  Bytes? @db.Blob
+  DFRCUSCG Bytes? @db.Blob
+}
+
+model tuition {
+  UNITID   Int    @id
+  XTUIT1   Bytes? @db.Blob
+  TUITION1 Bytes? @db.Blob
+  XFEE1    Bytes? @db.Blob
+  FEE1     Bytes? @db.Blob
+  XHRCHG1  Bytes? @db.Blob
+  HRCHG1   Bytes? @db.Blob
+  XTUIT2   Bytes? @db.Blob
+  TUITION2 Bytes? @db.Blob
+  XFEE2    Bytes? @db.Blob
+  FEE2     Bytes? @db.Blob
+  XHRCHG2  Bytes? @db.Blob
+  HRCHG2   Bytes? @db.Blob
+  XTUIT3   Bytes? @db.Blob
+  TUITION3 Bytes? @db.Blob
+  XFEE3    Bytes? @db.Blob
+  FEE3     Bytes? @db.Blob
+  XHRCHG3  Bytes? @db.Blob
+  HRCHG3   Bytes? @db.Blob
+  XTUIT5   Bytes? @db.Blob
+  TUITION5 Bytes? @db.Blob
+  XFEE5    Bytes? @db.Blob
+  FEE5     Bytes? @db.Blob
+  XHRCHG5  Bytes? @db.Blob
+  HRCHG5   Bytes? @db.Blob
+  XTUIT6   Bytes? @db.Blob
+  TUITION6 Bytes? @db.Blob
+  XFEE6    Bytes? @db.Blob
+  FEE6     Bytes? @db.Blob
+  XHRCHG6  Bytes? @db.Blob
+  HRCHG6   Bytes? @db.Blob
+  XTUIT7   Bytes? @db.Blob
+  TUITION7 Bytes? @db.Blob
+  XFEE7    Bytes? @db.Blob
+  FEE7     Bytes? @db.Blob
+  XHRCHG7  Bytes? @db.Blob
+  HRCHG7   Bytes? @db.Blob
+  XISPRO1  Bytes? @db.Blob
+  ISPROF1  Bytes? @db.Blob
+  XISPFE1  Bytes? @db.Blob
+  ISPFEE1  Bytes? @db.Blob
+  XOSPRO1  Bytes? @db.Blob
+  OSPROF1  Bytes? @db.Blob
+  XOSPFE1  Bytes? @db.Blob
+  OSPFEE1  Bytes? @db.Blob
+  XISPRO2  Bytes? @db.Blob
+  ISPROF2  Bytes? @db.Blob
+  XISPFE2  Bytes? @db.Blob
+  ISPFEE2  Bytes? @db.Blob
+  XOSPRO2  Bytes? @db.Blob
+  OSPROF2  Bytes? @db.Blob
+  XOSPFE2  Bytes? @db.Blob
+  OSPFEE2  Bytes? @db.Blob
+  XISPRO3  Bytes? @db.Blob
+  ISPROF3  Bytes? @db.Blob
+  XISPFE3  Bytes? @db.Blob
+  ISPFEE3  Bytes? @db.Blob
+  XOSPRO3  Bytes? @db.Blob
+  OSPROF3  Bytes? @db.Blob
+  XOSPFE3  Bytes? @db.Blob
+  OSPFEE3  Bytes? @db.Blob
+  XISPRO4  Bytes? @db.Blob
+  ISPROF4  Bytes? @db.Blob
+  XISPFE4  Bytes? @db.Blob
+  ISPFEE4  Bytes? @db.Blob
+  XOSPRO4  Bytes? @db.Blob
+  OSPROF4  Bytes? @db.Blob
+  XOSPFE4  Bytes? @db.Blob
+  OSPFEE4  Bytes? @db.Blob
+  XISPRO5  Bytes? @db.Blob
+  ISPROF5  Bytes? @db.Blob
+  XISPFE5  Bytes? @db.Blob
+  ISPFEE5  Bytes? @db.Blob
+  XOSPRO5  Bytes? @db.Blob
+  OSPROF5  Bytes? @db.Blob
+  XOSPFE5  Bytes? @db.Blob
+  OSPFEE5  Bytes? @db.Blob
+  XISPRO6  Bytes? @db.Blob
+  ISPROF6  Bytes? @db.Blob
+  XISPFE6  Bytes? @db.Blob
+  ISPFEE6  Bytes? @db.Blob
+  XOSPRO6  Bytes? @db.Blob
+  OSPROF6  Bytes? @db.Blob
+  XOSPFE6  Bytes? @db.Blob
+  OSPFEE6  Bytes? @db.Blob
+  XISPRO7  Bytes? @db.Blob
+  ISPROF7  Bytes? @db.Blob
+  XISPFE7  Bytes? @db.Blob
+  ISPFEE7  Bytes? @db.Blob
+  XOSPRO7  Bytes? @db.Blob
+  OSPROF7  Bytes? @db.Blob
+  XOSPFE7  Bytes? @db.Blob
+  OSPFEE7  Bytes? @db.Blob
+  XISPRO8  Bytes? @db.Blob
+  ISPROF8  Bytes? @db.Blob
+  XISPFE8  Bytes? @db.Blob
+  ISPFEE8  Bytes? @db.Blob
+  XOSPRO8  Bytes? @db.Blob
+  OSPROF8  Bytes? @db.Blob
+  XOSPFE8  Bytes? @db.Blob
+  OSPFEE8  Bytes? @db.Blob
+  XISPRO9  Bytes? @db.Blob
+  ISPROF9  Bytes? @db.Blob
+  XISPFE9  Bytes? @db.Blob
+  ISPFEE9  Bytes? @db.Blob
+  XOSPRO9  Bytes? @db.Blob
+  OSPROF9  Bytes? @db.Blob
+  XOSPFE9  Bytes? @db.Blob
+  OSPFEE9  Bytes? @db.Blob
+  XCHG1AT3 Bytes? @db.Blob
+  CHG1AT3  Bytes? @db.Blob
+  XCHG1AF3 Bytes? @db.Blob
+  CHG1AF3  Bytes? @db.Blob
+  XCHG1AY3 Bytes? @db.Blob
+  CHG1AY3  Bytes? @db.Blob
+  CHG1TGTD Bytes? @db.Blob
+  CHG1FGTD Bytes? @db.Blob
+  XCHG2AT3 Bytes? @db.Blob
+  CHG2AT3  Bytes? @db.Blob
+  XCHG2AF3 Bytes? @db.Blob
+  CHG2AF3  Bytes? @db.Blob
+  XCHG2AY3 Bytes? @db.Blob
+  CHG2AY3  Bytes? @db.Blob
+  CHG2TGTD Bytes? @db.Blob
+  CHG2FGTD Bytes? @db.Blob
+  XCHG3AT3 Bytes? @db.Blob
+  CHG3AT3  Bytes? @db.Blob
+  XCHG3AF3 Bytes? @db.Blob
+  CHG3AF3  Bytes? @db.Blob
+  XCHG3AY3 Bytes? @db.Blob
+  CHG3AY3  Bytes? @db.Blob
+  CHG3TGTD Bytes? @db.Blob
+  CHG3FGTD Bytes? @db.Blob
+  XCHG4AY3 Bytes? @db.Blob
+  CHG4AY3  Bytes? @db.Blob
+  XCHG5AY3 Bytes? @db.Blob
+  CHG5AY3  Bytes? @db.Blob
+  XCHG6AY3 Bytes? @db.Blob
+  CHG6AY3  Bytes? @db.Blob
+  XCHG7AY3 Bytes? @db.Blob
+  CHG7AY3  Bytes? @db.Blob
+  XCHG8AY3 Bytes? @db.Blob
+  CHG8AY3  Bytes? @db.Blob
+  XCHG9AY3 Bytes? @db.Blob
+  CHG9AY3  Bytes? @db.Blob
+}
+
+model Account {
+  id                String  @id
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  @@unique([provider, providerAccountId])
+}
+
+model Post {
+  id          Int      @id @default(autoincrement())
+  name        String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime
+  createdById String
+
+  @@index([name])
+}
+
+model Session {
+  id           String   @id
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+}
+
+model User {
+  id            String    @id
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
