@@ -148,372 +148,384 @@ model characteristics {
 }
 
 model enrollment_general {
-  UNITID   Int    @id
-  XCDACTUA Bytes? @db.Blob
-  CDACTUA  Bytes? @db.Blob
-  XCNACTUA Bytes? @db.Blob
-  CNACTUA  Bytes? @db.Blob
-  XCDACTGA Bytes? @db.Blob
-  CDACTGA  Bytes? @db.Blob
-  XEFTEUG  Bytes? @db.Blob
-  EFTEUG   Bytes? @db.Blob
-  XEFTEGD  Bytes? @db.Blob
-  EFTEGD   Bytes? @db.Blob
-  XFTEUG   Bytes? @db.Blob
-  FTEUG    Bytes? @db.Blob
-  XFTEGD   Bytes? @db.Blob
-  FTEGD    Bytes? @db.Blob
-  XFTEDPP  Bytes? @db.Blob
-  FTEDPP   Bytes? @db.Blob
-  ACTTYPE  Bytes? @db.Blob
+  UNITID   Int     @id
+  XCDACTUA String? @db.Text
+  CDACTUA  String? @db.Text
+  XCNACTUA String? @db.Text
+  CNACTUA  String? @db.Text
+  XCDACTGA String? @db.Text
+  CDACTGA  String? @db.Text
+  XEFTEUG  String? @db.Text
+  EFTEUG   String? @db.Text
+  XEFTEGD  String? @db.Text
+  EFTEGD   String? @db.Text
+  XFTEUG   String? @db.Text
+  FTEUG    String? @db.Text
+  XFTEGD   String? @db.Text
+  FTEGD    String? @db.Text
+  XFTEDPP  String? @db.Text
+  FTEDPP   String? @db.Text
+  ACTTYPE  String? @db.Text
 }
 
 model enrollment_specific {
   UNITID   Int?
-  EFFYALEV Bytes? @db.Blob
-  EFFYLEV  Bytes? @db.Blob
-  LSTUDY   Bytes? @db.Blob
-  XEYTOTLT Bytes? @db.Blob
-  EFYTOTLT Bytes? @db.Blob
-  XEYTOTLM Bytes? @db.Blob
-  EFYTOTLM Bytes? @db.Blob
-  XEYTOTLW Bytes? @db.Blob
-  EFYTOTLW Bytes? @db.Blob
-  XEFYAIAT Bytes? @db.Blob
-  EFYAIANT Bytes? @db.Blob
-  XEFYAIAM Bytes? @db.Blob
-  EFYAIANM Bytes? @db.Blob
-  XEFYAIAW Bytes? @db.Blob
-  EFYAIANW Bytes? @db.Blob
-  XEFYASIT Bytes? @db.Blob
-  EFYASIAT Bytes? @db.Blob
-  XEFYASIM Bytes? @db.Blob
-  EFYASIAM Bytes? @db.Blob
-  XEFYASIW Bytes? @db.Blob
-  EFYASIAW Bytes? @db.Blob
-  XEFYBKAT Bytes? @db.Blob
-  EFYBKAAT Bytes? @db.Blob
-  XEFYBKAM Bytes? @db.Blob
-  EFYBKAAM Bytes? @db.Blob
-  XEFYBKAW Bytes? @db.Blob
-  EFYBKAAW Bytes? @db.Blob
-  XEFYHIST Bytes? @db.Blob
-  EFYHISPT Bytes? @db.Blob
-  XEFYHISM Bytes? @db.Blob
-  EFYHISPM Bytes? @db.Blob
-  XEFYHISW Bytes? @db.Blob
-  EFYHISPW Bytes? @db.Blob
-  XEFYNHPT Bytes? @db.Blob
-  EFYNHPIT Bytes? @db.Blob
-  XEFYNHPM Bytes? @db.Blob
-  EFYNHPIM Bytes? @db.Blob
-  XEFYNHPW Bytes? @db.Blob
-  EFYNHPIW Bytes? @db.Blob
-  XEFYWHIT Bytes? @db.Blob
-  EFYWHITT Bytes? @db.Blob
-  XEFYWHIM Bytes? @db.Blob
-  EFYWHITM Bytes? @db.Blob
-  XEFYWHIW Bytes? @db.Blob
-  EFYWHITW Bytes? @db.Blob
-  XEFY2MOT Bytes? @db.Blob
-  EFY2MORT Bytes? @db.Blob
-  XEFY2MOM Bytes? @db.Blob
-  EFY2MORM Bytes? @db.Blob
-  XEFY2MOW Bytes? @db.Blob
-  EFY2MORW Bytes? @db.Blob
-  XEYUNKNT Bytes? @db.Blob
-  EFYUNKNT Bytes? @db.Blob
-  XEYUNKNM Bytes? @db.Blob
-  EFYUNKNM Bytes? @db.Blob
-  XEYUNKNW Bytes? @db.Blob
-  EFYUNKNW Bytes? @db.Blob
-  XEYNRALT Bytes? @db.Blob
-  EFYNRALT Bytes? @db.Blob
-  XEYNRALM Bytes? @db.Blob
-  EFYNRALM Bytes? @db.Blob
-  XEYNRALW Bytes? @db.Blob
-  EFYNRALW Bytes? @db.Blob
-  XEFYGUUN Bytes? @db.Blob
-  EFYGUUN  Bytes? @db.Blob
-  XEFYGUAN Bytes? @db.Blob
-  EFYGUAN  Bytes? @db.Blob
-  XEFYGUTO Bytes? @db.Blob
-  EFYGUTOT Bytes? @db.Blob
-  XEFYGUKN Bytes? @db.Blob
-  EFYGUKN  Bytes? @db.Blob
-  id       Int    @id @default(autoincrement())
+  EFFYALEV String? @db.Text
+  EFFYLEV  String? @db.Text
+  LSTUDY   String? @db.Text
+  XEYTOTLT String? @db.Text
+  EFYTOTLT String? @db.Text
+  XEYTOTLM String? @db.Text
+  EFYTOTLM String? @db.Text
+  XEYTOTLW String? @db.Text
+  EFYTOTLW String? @db.Text
+  XEFYAIAT String? @db.Text
+  EFYAIANT String? @db.Text
+  XEFYAIAM String? @db.Text
+  EFYAIANM String? @db.Text
+  XEFYAIAW String? @db.Text
+  EFYAIANW String? @db.Text
+  XEFYASIT String? @db.Text
+  EFYASIAT String? @db.Text
+  XEFYASIM String? @db.Text
+  EFYASIAM String? @db.Text
+  XEFYASIW String? @db.Text
+  EFYASIAW String? @db.Text
+  XEFYBKAT String? @db.Text
+  EFYBKAAT String? @db.Text
+  XEFYBKAM String? @db.Text
+  EFYBKAAM String? @db.Text
+  XEFYBKAW String? @db.Text
+  EFYBKAAW String? @db.Text
+  XEFYHIST String? @db.Text
+  EFYHISPT String? @db.Text
+  XEFYHISM String? @db.Text
+  EFYHISPM String? @db.Text
+  XEFYHISW String? @db.Text
+  EFYHISPW String? @db.Text
+  XEFYNHPT String? @db.Text
+  EFYNHPIT String? @db.Text
+  XEFYNHPM String? @db.Text
+  EFYNHPIM String? @db.Text
+  XEFYNHPW String? @db.Text
+  EFYNHPIW String? @db.Text
+  XEFYWHIT String? @db.Text
+  EFYWHITT String? @db.Text
+  XEFYWHIM String? @db.Text
+  EFYWHITM String? @db.Text
+  XEFYWHIW String? @db.Text
+  EFYWHITW String? @db.Text
+  XEFY2MOT String? @db.Text
+  EFY2MORT String? @db.Text
+  XEFY2MOM String? @db.Text
+  EFY2MORM String? @db.Text
+  XEFY2MOW String? @db.Text
+  EFY2MORW String? @db.Text
+  XEYUNKNT String? @db.Text
+  EFYUNKNT String? @db.Text
+  XEYUNKNM String? @db.Text
+  EFYUNKNM String? @db.Text
+  XEYUNKNW String? @db.Text
+  EFYUNKNW String? @db.Text
+  XEYNRALT String? @db.Text
+  EFYNRALT String? @db.Text
+  XEYNRALM String? @db.Text
+  EFYNRALM String? @db.Text
+  XEYNRALW String? @db.Text
+  EFYNRALW String? @db.Text
+  XEFYGUUN String? @db.Text
+  EFYGUUN  String? @db.Text
+  XEFYGUAN String? @db.Text
+  EFYGUAN  String? @db.Text
+  XEFYGUTO String? @db.Text
+  EFYGUTOT String? @db.Text
+  XEFYGUKN String? @db.Text
+  EFYGUKN  String? @db.Text
+  id       Int     @id @default(autoincrement())
 }
 
 model general {
-  UNITID   Int    @id
-  INSTNM   Bytes? @db.Blob
-  IALIAS   Bytes? @db.Blob
-  ADDR     Bytes? @db.Blob
-  CITY     Bytes? @db.Blob
-  STABBR   Bytes? @db.Blob
-  ZIP      Bytes? @db.Blob
-  FIPS     Bytes? @db.Blob
-  OBEREG   Bytes? @db.Blob
-  CHFNM    Bytes? @db.Blob
-  CHFTITLE Bytes? @db.Blob
-  GENTELE  Bytes? @db.Blob
-  EIN      Bytes? @db.Blob
-  UEIS     Bytes? @db.Blob
-  OPEID    Bytes? @db.Blob
-  OPEFLAG  Bytes? @db.Blob
-  WEBADDR  Bytes? @db.Blob
-  ADMINURL Bytes? @db.Blob
-  FAIDURL  Bytes? @db.Blob
-  APPLURL  Bytes? @db.Blob
-  NPRICURL Bytes? @db.Blob
-  VETURL   Bytes? @db.Blob
-  ATHURL   Bytes? @db.Blob
-  DISAURL  Bytes? @db.Blob
-  SECTOR   Bytes? @db.Blob
-  ICLEVEL  Bytes? @db.Blob
-  CONTROL  Bytes? @db.Blob
-  HLOFFER  Bytes? @db.Blob
-  UGOFFER  Bytes? @db.Blob
-  GROFFER  Bytes? @db.Blob
-  HDEGOFR1 Bytes? @db.Blob
-  DEGGRANT Bytes? @db.Blob
-  HBCU     Bytes? @db.Blob
-  HOSPITAL Bytes? @db.Blob
-  MEDICAL  Bytes? @db.Blob
-  TRIBAL   Bytes? @db.Blob
-  LOCALE   Bytes? @db.Blob
-  OPENPUBL Bytes? @db.Blob
-  ACT      Bytes? @db.Blob
-  NEWID    Bytes? @db.Blob
-  DEATHYR  Bytes? @db.Blob
-  CLOSEDAT Bytes? @db.Blob
-  CYACTIVE Bytes? @db.Blob
-  POSTSEC  Bytes? @db.Blob
-  PSEFLAG  Bytes? @db.Blob
-  PSET4FLG Bytes? @db.Blob
-  RPTMTH   Bytes? @db.Blob
-  INSTCAT  Bytes? @db.Blob
-  C21BASIC Bytes? @db.Blob
-  C21IPUG  Bytes? @db.Blob
-  C21IPGRD Bytes? @db.Blob
-  C21UGPRF Bytes? @db.Blob
-  C21ENPRF Bytes? @db.Blob
-  C21SZSET Bytes? @db.Blob
-  C18BASIC Bytes? @db.Blob
-  C15BASIC Bytes? @db.Blob
-  CCBASIC  Bytes? @db.Blob
-  CARNEGIE Bytes? @db.Blob
-  LANDGRNT Bytes? @db.Blob
-  INSTSIZE Bytes? @db.Blob
-  F1SYSTYP Bytes? @db.Blob
-  F1SYSNAM Bytes? @db.Blob
-  F1SYSCOD Bytes? @db.Blob
-  CBSA     Bytes? @db.Blob
-  CBSATYPE Bytes? @db.Blob
-  CSA      Bytes? @db.Blob
-  COUNTYCD Bytes? @db.Blob
-  COUNTYNM Bytes? @db.Blob
-  CNGDSTCD Bytes? @db.Blob
-  LONGITUD Bytes? @db.Blob
-  LATITUDE Bytes? @db.Blob
-  DFRCGID  Bytes? @db.Blob
-  DFRCUSCG Bytes? @db.Blob
+  UNITID   Int     @id
+  INSTNM   String? @db.Text
+  IALIAS   String? @db.Text
+  ADDR     String? @db.Text
+  CITY     String? @db.Text
+  STABBR   String? @db.Text
+  ZIP      String? @db.Text
+  FIPS     String? @db.Text
+  OBEREG   String? @db.Text
+  CHFNM    String? @db.Text
+  CHFTITLE String? @db.Text
+  GENTELE  String? @db.Text
+  EIN      String? @db.Text
+  UEIS     String? @db.Text
+  OPEID    String? @db.Text
+  OPEFLAG  String? @db.Text
+  WEBADDR  String? @db.Text
+  ADMINURL String? @db.Text
+  FAIDURL  String? @db.Text
+  APPLURL  String? @db.Text
+  NPRICURL String? @db.Text
+  VETURL   String? @db.Text
+  ATHURL   String? @db.Text
+  DISAURL  String? @db.Text
+  SECTOR   String? @db.Text
+  ICLEVEL  String? @db.Text
+  CONTROL  String? @db.Text
+  HLOFFER  String? @db.Text
+  UGOFFER  String? @db.Text
+  GROFFER  String? @db.Text
+  HDEGOFR1 String? @db.Text
+  DEGGRANT String? @db.Text
+  HBCU     String? @db.Text
+  HOSPITAL String? @db.Text
+  MEDICAL  String? @db.Text
+  TRIBAL   String? @db.Text
+  LOCALE   String? @db.Text
+  OPENPUBL String? @db.Text
+  ACT      String? @db.Text
+  NEWID    String? @db.Text
+  DEATHYR  String? @db.Text
+  CLOSEDAT String? @db.Text
+  CYACTIVE String? @db.Text
+  POSTSEC  String? @db.Text
+  PSEFLAG  String? @db.Text
+  PSET4FLG String? @db.Text
+  RPTMTH   String? @db.Text
+  INSTCAT  String? @db.Text
+  C21BASIC String? @db.Text
+  C21IPUG  String? @db.Text
+  C21IPGRD String? @db.Text
+  C21UGPRF String? @db.Text
+  C21ENPRF String? @db.Text
+  C21SZSET String? @db.Text
+  C18BASIC String? @db.Text
+  C15BASIC String? @db.Text
+  CCBASIC  String? @db.Text
+  CARNEGIE String? @db.Text
+  LANDGRNT String? @db.Text
+  INSTSIZE String? @db.Text
+  F1SYSTYP String? @db.Text
+  F1SYSNAM String? @db.Text
+  F1SYSCOD String? @db.Text
+  CBSA     String? @db.Text
+  CBSATYPE String? @db.Text
+  CSA      String? @db.Text
+  COUNTYCD String? @db.Text
+  COUNTYNM String? @db.Text
+  CNGDSTCD String? @db.Text
+  LONGITUD String? @db.Text
+  LATITUDE String? @db.Text
+  DFRCGID  String? @db.Text
+  DFRCUSCG String? @db.Text
 }
 
 model tuition {
-  UNITID   Int    @id
-  XTUIT1   Bytes? @db.Blob
-  TUITION1 Bytes? @db.Blob
-  XFEE1    Bytes? @db.Blob
-  FEE1     Bytes? @db.Blob
-  XHRCHG1  Bytes? @db.Blob
-  HRCHG1   Bytes? @db.Blob
-  XTUIT2   Bytes? @db.Blob
-  TUITION2 Bytes? @db.Blob
-  XFEE2    Bytes? @db.Blob
-  FEE2     Bytes? @db.Blob
-  XHRCHG2  Bytes? @db.Blob
-  HRCHG2   Bytes? @db.Blob
-  XTUIT3   Bytes? @db.Blob
-  TUITION3 Bytes? @db.Blob
-  XFEE3    Bytes? @db.Blob
-  FEE3     Bytes? @db.Blob
-  XHRCHG3  Bytes? @db.Blob
-  HRCHG3   Bytes? @db.Blob
-  XTUIT5   Bytes? @db.Blob
-  TUITION5 Bytes? @db.Blob
-  XFEE5    Bytes? @db.Blob
-  FEE5     Bytes? @db.Blob
-  XHRCHG5  Bytes? @db.Blob
-  HRCHG5   Bytes? @db.Blob
-  XTUIT6   Bytes? @db.Blob
-  TUITION6 Bytes? @db.Blob
-  XFEE6    Bytes? @db.Blob
-  FEE6     Bytes? @db.Blob
-  XHRCHG6  Bytes? @db.Blob
-  HRCHG6   Bytes? @db.Blob
-  XTUIT7   Bytes? @db.Blob
-  TUITION7 Bytes? @db.Blob
-  XFEE7    Bytes? @db.Blob
-  FEE7     Bytes? @db.Blob
-  XHRCHG7  Bytes? @db.Blob
-  HRCHG7   Bytes? @db.Blob
-  XISPRO1  Bytes? @db.Blob
-  ISPROF1  Bytes? @db.Blob
-  XISPFE1  Bytes? @db.Blob
-  ISPFEE1  Bytes? @db.Blob
-  XOSPRO1  Bytes? @db.Blob
-  OSPROF1  Bytes? @db.Blob
-  XOSPFE1  Bytes? @db.Blob
-  OSPFEE1  Bytes? @db.Blob
-  XISPRO2  Bytes? @db.Blob
-  ISPROF2  Bytes? @db.Blob
-  XISPFE2  Bytes? @db.Blob
-  ISPFEE2  Bytes? @db.Blob
-  XOSPRO2  Bytes? @db.Blob
-  OSPROF2  Bytes? @db.Blob
-  XOSPFE2  Bytes? @db.Blob
-  OSPFEE2  Bytes? @db.Blob
-  XISPRO3  Bytes? @db.Blob
-  ISPROF3  Bytes? @db.Blob
-  XISPFE3  Bytes? @db.Blob
-  ISPFEE3  Bytes? @db.Blob
-  XOSPRO3  Bytes? @db.Blob
-  OSPROF3  Bytes? @db.Blob
-  XOSPFE3  Bytes? @db.Blob
-  OSPFEE3  Bytes? @db.Blob
-  XISPRO4  Bytes? @db.Blob
-  ISPROF4  Bytes? @db.Blob
-  XISPFE4  Bytes? @db.Blob
-  ISPFEE4  Bytes? @db.Blob
-  XOSPRO4  Bytes? @db.Blob
-  OSPROF4  Bytes? @db.Blob
-  XOSPFE4  Bytes? @db.Blob
-  OSPFEE4  Bytes? @db.Blob
-  XISPRO5  Bytes? @db.Blob
-  ISPROF5  Bytes? @db.Blob
-  XISPFE5  Bytes? @db.Blob
-  ISPFEE5  Bytes? @db.Blob
-  XOSPRO5  Bytes? @db.Blob
-  OSPROF5  Bytes? @db.Blob
-  XOSPFE5  Bytes? @db.Blob
-  OSPFEE5  Bytes? @db.Blob
-  XISPRO6  Bytes? @db.Blob
-  ISPROF6  Bytes? @db.Blob
-  XISPFE6  Bytes? @db.Blob
-  ISPFEE6  Bytes? @db.Blob
-  XOSPRO6  Bytes? @db.Blob
-  OSPROF6  Bytes? @db.Blob
-  XOSPFE6  Bytes? @db.Blob
-  OSPFEE6  Bytes? @db.Blob
-  XISPRO7  Bytes? @db.Blob
-  ISPROF7  Bytes? @db.Blob
-  XISPFE7  Bytes? @db.Blob
-  ISPFEE7  Bytes? @db.Blob
-  XOSPRO7  Bytes? @db.Blob
-  OSPROF7  Bytes? @db.Blob
-  XOSPFE7  Bytes? @db.Blob
-  OSPFEE7  Bytes? @db.Blob
-  XISPRO8  Bytes? @db.Blob
-  ISPROF8  Bytes? @db.Blob
-  XISPFE8  Bytes? @db.Blob
-  ISPFEE8  Bytes? @db.Blob
-  XOSPRO8  Bytes? @db.Blob
-  OSPROF8  Bytes? @db.Blob
-  XOSPFE8  Bytes? @db.Blob
-  OSPFEE8  Bytes? @db.Blob
-  XISPRO9  Bytes? @db.Blob
-  ISPROF9  Bytes? @db.Blob
-  XISPFE9  Bytes? @db.Blob
-  ISPFEE9  Bytes? @db.Blob
-  XOSPRO9  Bytes? @db.Blob
-  OSPROF9  Bytes? @db.Blob
-  XOSPFE9  Bytes? @db.Blob
-  OSPFEE9  Bytes? @db.Blob
-  XCHG1AT3 Bytes? @db.Blob
-  CHG1AT3  Bytes? @db.Blob
-  XCHG1AF3 Bytes? @db.Blob
-  CHG1AF3  Bytes? @db.Blob
-  XCHG1AY3 Bytes? @db.Blob
-  CHG1AY3  Bytes? @db.Blob
-  CHG1TGTD Bytes? @db.Blob
-  CHG1FGTD Bytes? @db.Blob
-  XCHG2AT3 Bytes? @db.Blob
-  CHG2AT3  Bytes? @db.Blob
-  XCHG2AF3 Bytes? @db.Blob
-  CHG2AF3  Bytes? @db.Blob
-  XCHG2AY3 Bytes? @db.Blob
-  CHG2AY3  Bytes? @db.Blob
-  CHG2TGTD Bytes? @db.Blob
-  CHG2FGTD Bytes? @db.Blob
-  XCHG3AT3 Bytes? @db.Blob
-  CHG3AT3  Bytes? @db.Blob
-  XCHG3AF3 Bytes? @db.Blob
-  CHG3AF3  Bytes? @db.Blob
-  XCHG3AY3 Bytes? @db.Blob
-  CHG3AY3  Bytes? @db.Blob
-  CHG3TGTD Bytes? @db.Blob
-  CHG3FGTD Bytes? @db.Blob
-  XCHG4AY3 Bytes? @db.Blob
-  CHG4AY3  Bytes? @db.Blob
-  XCHG5AY3 Bytes? @db.Blob
-  CHG5AY3  Bytes? @db.Blob
-  XCHG6AY3 Bytes? @db.Blob
-  CHG6AY3  Bytes? @db.Blob
-  XCHG7AY3 Bytes? @db.Blob
-  CHG7AY3  Bytes? @db.Blob
-  XCHG8AY3 Bytes? @db.Blob
-  CHG8AY3  Bytes? @db.Blob
-  XCHG9AY3 Bytes? @db.Blob
-  CHG9AY3  Bytes? @db.Blob
-}
-
-model Account {
-  id                String  @id
-  userId            String
-  type              String
-  provider          String
-  providerAccountId String
-  refresh_token     String? @db.Text
-  access_token      String? @db.Text
-  expires_at        Int?
-  token_type        String?
-  scope             String?
-  id_token          String? @db.Text
-  session_state     String?
-
-  @@unique([provider, providerAccountId])
+  UNITID   Int     @id
+  XTUIT1   String? @db.Text
+  TUITION1 String? @db.Text
+  XFEE1    String? @db.Text
+  FEE1     String? @db.Text
+  XHRCHG1  String? @db.Text
+  HRCHG1   String? @db.Text
+  XTUIT2   String? @db.Text
+  TUITION2 String? @db.Text
+  XFEE2    String? @db.Text
+  FEE2     String? @db.Text
+  XHRCHG2  String? @db.Text
+  HRCHG2   String? @db.Text
+  XTUIT3   String? @db.Text
+  TUITION3 String? @db.Text
+  XFEE3    String? @db.Text
+  FEE3     String? @db.Text
+  XHRCHG3  String? @db.Text
+  HRCHG3   String? @db.Text
+  XTUIT5   String? @db.Text
+  TUITION5 String? @db.Text
+  XFEE5    String? @db.Text
+  FEE5     String? @db.Text
+  XHRCHG5  String? @db.Text
+  HRCHG5   String? @db.Text
+  XTUIT6   String? @db.Text
+  TUITION6 String? @db.Text
+  XFEE6    String? @db.Text
+  FEE6     String? @db.Text
+  XHRCHG6  String? @db.Text
+  HRCHG6   String? @db.Text
+  XTUIT7   String? @db.Text
+  TUITION7 String? @db.Text
+  XFEE7    String? @db.Text
+  FEE7     String? @db.Text
+  XHRCHG7  String? @db.Text
+  HRCHG7   String? @db.Text
+  XISPRO1  String? @db.Text
+  ISPROF1  String? @db.Text
+  XISPFE1  String? @db.Text
+  ISPFEE1  String? @db.Text
+  XOSPRO1  String? @db.Text
+  OSPROF1  String? @db.Text
+  XOSPFE1  String? @db.Text
+  OSPFEE1  String? @db.Text
+  XISPRO2  String? @db.Text
+  ISPROF2  String? @db.Text
+  XISPFE2  String? @db.Text
+  ISPFEE2  String? @db.Text
+  XOSPRO2  String? @db.Text
+  OSPROF2  String? @db.Text
+  XOSPFE2  String? @db.Text
+  OSPFEE2  String? @db.Text
+  XISPRO3  String? @db.Text
+  ISPROF3  String? @db.Text
+  XISPFE3  String? @db.Text
+  ISPFEE3  String? @db.Text
+  XOSPRO3  String? @db.Text
+  OSPROF3  String? @db.Text
+  XOSPFE3  String? @db.Text
+  OSPFEE3  String? @db.Text
+  XISPRO4  String? @db.Text
+  ISPROF4  String? @db.Text
+  XISPFE4  String? @db.Text
+  ISPFEE4  String? @db.Text
+  XOSPRO4  String? @db.Text
+  OSPROF4  String? @db.Text
+  XOSPFE4  String? @db.Text
+  OSPFEE4  String? @db.Text
+  XISPRO5  String? @db.Text
+  ISPROF5  String? @db.Text
+  XISPFE5  String? @db.Text
+  ISPFEE5  String? @db.Text
+  XOSPRO5  String? @db.Text
+  OSPROF5  String? @db.Text
+  XOSPFE5  String? @db.Text
+  OSPFEE5  String? @db.Text
+  XISPRO6  String? @db.Text
+  ISPROF6  String? @db.Text
+  XISPFE6  String? @db.Text
+  ISPFEE6  String? @db.Text
+  XOSPRO6  String? @db.Text
+  OSPROF6  String? @db.Text
+  XOSPFE6  String? @db.Text
+  OSPFEE6  String? @db.Text
+  XISPRO7  String? @db.Text
+  ISPROF7  String? @db.Text
+  XISPFE7  String? @db.Text
+  ISPFEE7  String? @db.Text
+  XOSPRO7  String? @db.Text
+  OSPROF7  String? @db.Text
+  XOSPFE7  String? @db.Text
+  OSPFEE7  String? @db.Text
+  XISPRO8  String? @db.Text
+  ISPROF8  String? @db.Text
+  XISPFE8  String? @db.Text
+  ISPFEE8  String? @db.Text
+  XOSPRO8  String? @db.Text
+  OSPROF8  String? @db.Text
+  XOSPFE8  String? @db.Text
+  OSPFEE8  String? @db.Text
+  XISPRO9  String? @db.Text
+  ISPROF9  String? @db.Text
+  XISPFE9  String? @db.Text
+  ISPFEE9  String? @db.Text
+  XOSPRO9  String? @db.Text
+  OSPROF9  String? @db.Text
+  XOSPFE9  String? @db.Text
+  OSPFEE9  String? @db.Text
+  XCHG1AT3 String? @db.Text
+  CHG1AT3  String? @db.Text
+  XCHG1AF3 String? @db.Text
+  CHG1AF3  String? @db.Text
+  XCHG1AY3 String? @db.Text
+  CHG1AY3  String? @db.Text
+  CHG1TGTD String? @db.Text
+  CHG1FGTD String? @db.Text
+  XCHG2AT3 String? @db.Text
+  CHG2AT3  String? @db.Text
+  XCHG2AF3 String? @db.Text
+  CHG2AF3  String? @db.Text
+  XCHG2AY3 String? @db.Text
+  CHG2AY3  String? @db.Text
+  CHG2TGTD String? @db.Text
+  CHG2FGTD String? @db.Text
+  XCHG3AT3 String? @db.Text
+  CHG3AT3  String? @db.Text
+  XCHG3AF3 String? @db.Text
+  CHG3AF3  String? @db.Text
+  XCHG3AY3 String? @db.Text
+  CHG3AY3  String? @db.Text
+  CHG3TGTD String? @db.Text
+  CHG3FGTD String? @db.Text
+  XCHG4AY3 String? @db.Text
+  CHG4AY3  String? @db.Text
+  XCHG5AY3 String? @db.Text
+  CHG5AY3  String? @db.Text
+  XCHG6AY3 String? @db.Text
+  CHG6AY3  String? @db.Text
+  XCHG7AY3 String? @db.Text
+  CHG7AY3  String? @db.Text
+  XCHG8AY3 String? @db.Text
+  CHG8AY3  String? @db.Text
+  XCHG9AY3 String? @db.Text
+  CHG9AY3  String? @db.Text
 }
 
 model Post {
-  id          Int      @id @default(autoincrement())
-  name        String
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime
-  createdById String
+    id        Int      @id @default(autoincrement())
+    name      String
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
 
-  @@index([name])
+    createdBy   User   @relation(fields: [createdById], references: [id])
+    createdById String
+
+    @@index([name])
+    @@index([createdById])
+}
+
+// Necessary for Next auth
+model Account {
+    id                String  @id @default(cuid())
+    userId            String
+    type              String
+    provider          String
+    providerAccountId String
+    refresh_token     String? @db.Text
+    access_token      String? @db.Text
+    expires_at        Int?
+    token_type        String?
+    scope             String?
+    id_token          String? @db.Text
+    session_state     String?
+    user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+    @@unique([provider, providerAccountId])
+    @@index([userId])
 }
 
 model Session {
-  id           String   @id
-  sessionToken String   @unique
-  userId       String
-  expires      DateTime
+    id           String   @id @default(cuid())
+    sessionToken String   @unique
+    userId       String
+    expires      DateTime
+    user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+    @@index([userId])
 }
 
 model User {
-  id            String    @id
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime?
-  image         String?
+    id            String    @id @default(cuid())
+    name          String?
+    email         String?   @unique
+    emailVerified DateTime?
+    image         String?
+    accounts      Account[]
+    sessions      Session[]
+    posts         Post[]
 }
 
 model VerificationToken {
-  identifier String
-  token      String   @unique
-  expires    DateTime
+    identifier String
+    token      String   @unique
+    expires    DateTime
 
-  @@unique([identifier, token])
+    @@unique([identifier, token])
 }
